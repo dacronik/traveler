@@ -1,0 +1,57 @@
+.tarjetas{
+    width: 100%;
+    height: 100%;
+}
+.cards{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    &___image{
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:710px){
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .card{
+        width: 45%;
+
+        &__image{
+            height: 250px;
+        }
+    }
+}
+
+@media screen and (min-width:1150px){
+    .tarjetas{
+        width: 92%;
+        height: 100%;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .card{
+        width: 30%;
+
+        &__image{
+            height: 250px;
+        }
+    }
+}
